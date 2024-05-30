@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "biome-dimensions-expanded",
+	"version": "${version}",
+	"name": "Biome Dimensions Expanded",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/biome-dimensions-expanded/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.icbat.biomedimensionsexpanded.BiomeDimensionsExpanded"
+		],
+		"client": [
+			"com.example.icbat.biomedimensionsexpanded.BiomeDimensionsExpandedClient"
+		]
+	},
+	"mixins": [
+		"biome-dimensions-expanded.mixins.json",
+		{
+			"config": "biome-dimensions-expanded.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
