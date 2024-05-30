@@ -2,8 +2,12 @@ package com.example.icbat.biomedimensionsexpanded;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 
 public class BiomeDimensionsExpanded implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -18,5 +22,13 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+		CustomPortalBuilder.beginPortal()
+				.frameBlock(Blocks.BAMBOO_BLOCK)
+				.lightWithWater()
+				.destDimID(new Identifier("the_nether"))
+				.tintColor(33, 33, 33)
+				.onlyLightInOverworld()
+				.registerPortal();
 	}
 }
