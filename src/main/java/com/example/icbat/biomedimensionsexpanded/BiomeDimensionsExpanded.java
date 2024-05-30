@@ -23,10 +23,10 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 
 
 		CustomPortalBuilder.beginPortal()
-				.frameBlock(Blocks.BAMBOO_BLOCK)
-				.destDimID(new Identifier(MOD_ID, "test-dimension"))
-				.tintColor(33, 33, 33)
-				.onlyLightInOverworld()
-				.registerPortal();
+			.frameBlock(Blocks.BAMBOO_BLOCK)
+			.destDimID(new Identifier(MOD_ID, "test-dimension"))
+			.tintColor(33, 33, 33)
+			.onlyLightInOverworld()
+			.registerPortal();
 	}
 }
