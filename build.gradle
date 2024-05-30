@@ -93,8 +93,3 @@ publishing {
 		// retrieving dependencies.
 	}
 }
-
-// data-gen enablement
-fabricApi {
-	configureDataGeneration()
-}

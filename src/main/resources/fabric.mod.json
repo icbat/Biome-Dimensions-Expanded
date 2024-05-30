@@ -15,9 +15,6 @@
 	"icon": "assets/biome-dimensions-expanded/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"fabric-datagen": [
-			"com.example.icbat.biomedimensionsexpanded.BiomeDimensionsExpandedDataGenerator"
-		],
 		"main": [
 			"com.example.icbat.biomedimensionsexpanded.BiomeDimensionsExpanded"
 		]
