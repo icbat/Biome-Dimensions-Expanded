@@ -4,9 +4,6 @@ import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.resource.ResourceFinder;
-import net.minecraft.resource.fs.ResourceFileSystem;
-import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,14 +23,14 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
-
+		// TODO Can we make a file for this, so it's not Java-y to write more?
 		List<PortalToDimension> portals = new ArrayList<>();
-
 		portals.add(new PortalToDimension(Blocks.SANDSTONE, "desert",  174, 119, 31));
 
+        LOGGER.info("Adding {} biome portals", portals.size());
 
 		for (PortalToDimension portal : portals) {
+            LOGGER.debug("Adding portal for: {}", portal.dimension_id());
 			CustomPortalBuilder.beginPortal()
 					.frameBlock(portal.portal_block())
 					.destDimID(new Identifier(MOD_ID, portal.dimension_id()))
@@ -41,9 +38,9 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 					.onlyLightInOverworld()
 					.registerPortal();
 		}
+
+		LOGGER.info("Finished adding biome portals");
 	}
 }
 
-record PortalToDimension(Block portal_block, String dimension_id, int portal_r, int portal_g, int portal_b) {
-
-}
+record PortalToDimension(Block portal_block, String dimension_id, int portal_r, int portal_g, int portal_b) {}
