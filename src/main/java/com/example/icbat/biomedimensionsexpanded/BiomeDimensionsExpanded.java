@@ -24,7 +24,7 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(Blocks.BAMBOO_BLOCK)
 				.lightWithWater()
-				.destDimID(new Identifier("the_nether"))
+				.destDimID(new Identifier(MOD_ID, "test-dimension"))
 				.tintColor(33, 33, 33)
 				.onlyLightInOverworld()
 				.registerPortal();
