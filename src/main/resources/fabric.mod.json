@@ -3,31 +3,24 @@
 	"id": "biome-dimensions-expanded",
 	"version": "${version}",
 	"name": "Biome Dimensions Expanded",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds dimensions for vanilla biomes that are accessible via new portals",
 	"authors": [
-		"Me!"
+		"Evan Cobb"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/icbat/biome-dimensions-expanded",
+		"sources": "https://github.com/icbat/biome-dimensions-expanded"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/biome-dimensions-expanded/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.example.icbat.biomedimensionsexpanded.BiomeDimensionsExpanded"
-		],
-		"client": [
-			"com.example.icbat.biomedimensionsexpanded.BiomeDimensionsExpandedClient"
 		]
 	},
 	"mixins": [
-		"biome-dimensions-expanded.mixins.json",
-		{
-			"config": "biome-dimensions-expanded.client.mixins.json",
-			"environment": "client"
-		}
+		"biome-dimensions-expanded.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
