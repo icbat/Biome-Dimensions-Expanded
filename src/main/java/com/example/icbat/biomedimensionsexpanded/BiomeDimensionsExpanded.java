@@ -25,7 +25,11 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 
 		// TODO Can we make a file for this, so it's not Java-y to write more?
 		List<PortalToDimension> portals = new ArrayList<>();
-		portals.add(new PortalToDimension(Blocks.SANDSTONE, "desert",  174, 119, 31));
+		portals.add(new PortalToDimension(Blocks.SANDSTONE, "beach",  174, 119, 31));
+		portals.add(new PortalToDimension(Blocks.CHISELED_SANDSTONE, "desert",  174, 119, 31));
+		portals.add(new PortalToDimension(Blocks.RED_MUSHROOM_BLOCK, "mooshroom",  122, 32, 26));
+		portals.add(new PortalToDimension(Blocks.STRIPPED_CHERRY_LOG, "cherry_grove",  153, 75, 124));
+		portals.add(new PortalToDimension(Blocks.BAMBOO_BLOCK, "bamboo_jungle",  104, 114, 32));
 
         LOGGER.info("Adding {} biome portals", portals.size());
 
