@@ -30,6 +30,8 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 		portals.add(new PortalToDimension(Blocks.RED_MUSHROOM_BLOCK, "mooshroom",  122, 32, 26));
 		portals.add(new PortalToDimension(Blocks.STRIPPED_CHERRY_LOG, "cherry_grove",  153, 75, 124));
 		portals.add(new PortalToDimension(Blocks.BAMBOO_BLOCK, "bamboo_jungle",  104, 114, 32));
+		portals.add(new PortalToDimension(Blocks.STRIPPED_ACACIA_LOG, "savanna",  147, 60, 23));
+		portals.add(new PortalToDimension(Blocks.STRIPPED_JUNGLE_LOG, "jungle",  147, 60, 23));
 
         LOGGER.info("Adding {} biome portals", portals.size());
 
