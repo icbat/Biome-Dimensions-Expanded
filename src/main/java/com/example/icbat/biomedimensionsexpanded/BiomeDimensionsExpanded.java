@@ -2,6 +2,7 @@ package com.example.icbat.biomedimensionsexpanded;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.kyrptonaught.customportalapi.util.PortalLink;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
@@ -56,10 +57,14 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 
 		for (PortalToDimension portal : portals) {
             LOGGER.debug("Adding portal for: {}", portal.dimension_id());
+			int red = portal.portal_color().getRed();
+			int green = portal.portal_color().getGreen();
+			int blue = portal.portal_color().getBlue();
+
 			CustomPortalBuilder.beginPortal()
 					.frameBlock(portal.portal_block())
 					.destDimID(new Identifier(MOD_ID, portal.dimension_id()))
-					.tintColor(portal.portal_color().getRed(), portal.portal_color().getBlue(), portal.portal_color().getGreen())
+					.tintColor(red, green, blue)
 					.onlyLightInOverworld()
 					.registerPortal();
 		}
