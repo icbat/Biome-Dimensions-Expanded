@@ -2,7 +2,6 @@ package com.example.icbat.biomedimensionsexpanded;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.kyrptonaught.customportalapi.util.PortalLink;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
@@ -38,10 +37,9 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 		portals.add(new PortalToDimension(Blocks.STRIPPED_JUNGLE_LOG, "jungle",  new Color(80, 112, 45)));
 
 		portals.add(new PortalToDimension(Blocks.SNOW_BLOCK, "snowy_plains",  new Color(200, 205, 204)));
-		portals.add(new PortalToDimension(Blocks.POWDER_SNOW, "snowy_slopes",  new Color(201, 206, 205)));
-		portals.add(new PortalToDimension(Blocks.ICE, "grove",  new Color(127, 180, 196)));
-		portals.add(new PortalToDimension(Blocks.PACKED_ICE, "ice_spikes",  new Color(87, 137, 150)));
-		portals.add(new PortalToDimension(Blocks.BLUE_ICE, "frozen_ocean",  new Color(47, 145, 176)));
+		portals.add(new PortalToDimension(Blocks.ICE, "snowy_slopes",  new Color(110, 142, 208)));
+		portals.add(new PortalToDimension(Blocks.PACKED_ICE, "ice_spikes",  new Color(117, 148, 203)));
+		portals.add(new PortalToDimension(Blocks.BLUE_ICE, "frozen_ocean",  new Color(80, 117, 187)));
 
 		// Honey Block -> Meadow, Flower Forest
 		// Seaweed Block -> Deep Ocean

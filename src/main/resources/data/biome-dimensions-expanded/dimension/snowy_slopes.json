@@ -4,8 +4,33 @@
     "type": "minecraft:noise",
     "settings": "minecraft:overworld",
     "biome_source": {
-      "type": "minecraft:fixed",
-      "biome": "minecraft:snowy_slopes"
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "minecraft:grove",
+          "parameters": {
+            "temperature": 0.1,
+            "humidity": 0.3,
+            "continentalness": 0,
+            "erosion": 0.5,
+            "weirdness": 0.5,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:snowy_slopes",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0.1,
+            "continentalness": 0.5,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
     }
   }
 }
