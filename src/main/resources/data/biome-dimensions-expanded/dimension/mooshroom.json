@@ -6,6 +6,6 @@
       "biome": "minecraft:mushroom_fields"
     },
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld"
+"settings": "minecraft:large_biomes"
   }
 }

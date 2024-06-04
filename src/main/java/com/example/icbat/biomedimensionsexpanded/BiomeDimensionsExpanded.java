@@ -50,6 +50,7 @@ public class BiomeDimensionsExpanded implements ModInitializer {
 		// ??? -> Lush Caves
 		// ??? -> Mountain Biomes?
 		// ??? -> Sunflower Fields?
+		// ??? -> normal plains
 
         LOGGER.info("Adding {} biome portals", portals.size());
 

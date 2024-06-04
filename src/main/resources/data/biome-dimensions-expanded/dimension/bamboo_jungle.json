@@ -6,7 +6,7 @@
       "biome": "minecraft:bamboo_jungle"
     },
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld"
+"settings": "minecraft:large_biomes"
 
   }
 }

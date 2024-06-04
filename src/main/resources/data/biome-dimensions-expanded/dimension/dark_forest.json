@@ -6,6 +6,6 @@
       "biome": "minecraft:dark_forest"
     },
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld"
+"settings": "minecraft:large_biomes"
   }
 }

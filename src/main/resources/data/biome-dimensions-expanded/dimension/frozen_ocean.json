@@ -6,6 +6,6 @@
       "biome": "minecraft:frozen_ocean"
     },
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld"
+"settings": "minecraft:large_biomes"
   }
 }

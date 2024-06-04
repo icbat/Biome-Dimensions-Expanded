@@ -6,6 +6,6 @@
       "biome": "minecraft:ice_spikes"
     },
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld"
+"settings": "minecraft:large_biomes"
   }
 }

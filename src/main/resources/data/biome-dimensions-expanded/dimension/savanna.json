@@ -6,6 +6,6 @@
       "biome": "minecraft:savanna"
     },
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld"
+"settings": "minecraft:large_biomes"
   }
 }
